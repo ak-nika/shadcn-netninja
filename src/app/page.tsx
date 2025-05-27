@@ -58,7 +58,7 @@ const Home = async () => {
             </CardContent>
 
             <CardFooter className="flex justify-between items-center">
-              <Button className="cursor-pointer">View Recipe</Button>
+              <Button className="cursor-pointer text-white">View Recipe</Button>
               {recipe.vegan && <Badge variant="secondary">Vegan</Badge>}
             </CardFooter>
           </Card>
