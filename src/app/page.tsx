@@ -23,6 +23,9 @@ const Home = async () => {
   const getRecipes = async (): Promise<Recipes[]> => {
     const res = await fetch("http://localhost:5000/recipes");
 
+    // delay response
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+
     return res.json();
   };
 
